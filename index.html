@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengenalan VPS & Cloud</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #101b35, #172b4d);
+        color: white;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+      .header h1 {
+        color: #ffad42;
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        color: #cbd5e1;
+        line-height: 1.6;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+      }
+
+      .card {
+        background: #ffffff;
+        color: #1e293b;
+        padding: 27px;
+        border-radius: 15px;
+        border-top: 5px solid var(--accent);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        transition: 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      .icon {
+        font-size: 35px;
+        margin-bottom: 15px;
+      }
+
+      .card h2 {
+        font-size: 21px;
+        margin-bottom: 12px;
+        color: var(--accent);
+      }
+
+      .card p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #475569;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-top: 17px;
+        padding: 6px 12px;
+        background: var(--light);
+        color: var(--accent);
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 35px;
+        color: #94a3b8;
+        font-size: 13px;
+      }
+
+      @media (max-width: 650px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .header h1 {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>☁️ Pengenalan VPS & Cloud</h1>
+        <p>Mengenal empat jenis layanan hosting dan server beserta fungsi serta karakteristiknya.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card" style="--accent: #2563eb; --light: #dbeafe">
+          <div class="icon">🌐</div>
+          <h2>Shared Hosting</h2>
+          <p>
+            Shared Hosting adalah layanan hosting di mana beberapa website menggunakan satu server dan berbagi sumber daya seperti CPU, RAM, dan penyimpanan. Layanan ini cocok untuk website pribadi atau bisnis kecil karena harganya lebih
+            ekonomis.
+          </p>
+          <span class="tag">Hemat Biaya</span>
+        </div>
+
+        <div class="card" style="--accent: #dc2626; --light: #fee2e2">
+          <div class="icon">🖥️</div>
+          <h2>Dedicated Server</h2>
+          <p>Dedicated Server adalah layanan server fisik yang seluruh sumber dayanya digunakan oleh satu pengguna. Memberikan performa, keamanan, dan kontrol lebih maksimal, cocok untuk website atau aplikasi dengan trafik tinggi.</p>
+          <span class="tag">Performa Maksimal</span>
+        </div>
+
+        <div class="card" style="--accent: #d97706; --light: #fef3c7">
+          <div class="icon">🚀</div>
+          <h2>Amazon Lightsail</h2>
+          <p>
+            Amazon Lightsail adalah layanan cloud dari AWS yang menyediakan VPS dengan konfigurasi sederhana. Pengguna dapat membuat server virtual dengan paket harga yang lebih mudah diprediksi. Cocok untuk pemula dan proyek skala kecil
+            hingga menengah.
+          </p>
+          <span class="tag">Mudah Digunakan</span>
+        </div>
+
+        <div class="card" style="--accent: #059669; --light: #d1fae5">
+          <div class="icon">⚡</div>
+          <h2>Amazon EC2</h2>
+          <p>
+            Amazon EC2 (Elastic Compute Cloud) adalah layanan komputasi cloud dari AWS yang menyediakan server virtual dengan konfigurasi fleksibel. Pengguna dapat mengatur kapasitas CPU, RAM, penyimpanan, dan jaringan sesuai kebutuhan
+            aplikasi.
+          </p>
+          <span class="tag">Fleksibel & Skalabel</span>
+        </div>
+      </div>
+
+      <div class="footer">© 2026 | Learning VPS & Cloud Computing</div>
+    </div>
+  </body>
+</html>
